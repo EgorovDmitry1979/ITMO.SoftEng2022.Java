@@ -1,7 +1,7 @@
-package Lab1;
+package Lab1.Ex5;
 import java.util.Scanner; // позволяет использовать класс Scanner
 
-public class Lab1Ex5
+public class Ex5
 {
     public static void main(String[] args)
     {

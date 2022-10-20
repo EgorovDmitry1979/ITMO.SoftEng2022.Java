@@ -1,7 +1,7 @@
-package Lab1;
+package Lab1.Ex6;
 import java.util.Scanner; // позволяет использовать класс Scanner
 
-public class Lab1Ex6
+public class Ex6
 {
     public static void main(String[] args)
     {
@@ -12,9 +12,9 @@ public class Lab1Ex6
 
         if ( b % 2 == 0 && b <= 100 ) // = остаток от деления числа b на 2 равен 0
             System.out.println("Число " + b + " чётное");
-        else if (b % 2 == 0 && b > 100)
-            System.out.println("Число " + b + " чётное, но выходит за пределы диапазона");
+        else if (b % 2 != 0) // // учтены замечания урока в части оптимизации алгоритма
+            System.out.println("Число " + b + " не чётное"); // оптимизация алгоритма
         else
-            System.out.println("Число " + b + " нечётное");
+            System.out.println("Число " + b + " чётное, но выходит за пределы диапазона");
     }
 }

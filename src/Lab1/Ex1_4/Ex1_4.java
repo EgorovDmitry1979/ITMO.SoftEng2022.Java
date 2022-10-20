@@ -1,6 +1,6 @@
-package Lab1;
+package Lab1.Ex1_4;
 
-public class Lab1Ex1_4
+public class Ex1_4
 {
     public static void main(String[] args)
     {
@@ -11,12 +11,12 @@ public class Lab1Ex1_4
         System.out.println("    Java");
 
         System.out.println("2) Посчитайте результат выражения");
-        System.out.println("    (46 + 10) * (10 / 3) = " + (46+10)*(10/3));
+        System.out.println("    (46 + 10) * (10 / 3) = " + (46+10)*(10d/3)); // добавил d
         System.out.println("    29 * 4 * (-15) = " + (29)*(4)*(-15));
 
         System.out.println("3)"); // Нумерация
-        int number = 10500;
-        int result = (number/10)/10;
+        double number = 10500; // заменил тип int на double
+        double result = (number/10)/10; // заменил тип int на double
         System.out.println("    result = " + result);
 
         System.out.println("4)"); // Нумерация
