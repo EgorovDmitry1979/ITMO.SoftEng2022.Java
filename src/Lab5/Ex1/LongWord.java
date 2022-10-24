@@ -1,49 +1,29 @@
 package Lab5.Ex1;
-
 import java.util.Arrays;
+
+// Часть 2. у.1. Написать метод для поиска самого длинного слова в тексте
 
 public class LongWord {
     public static void main(String[] args) {
+        String text = "  Написать Метод, необходимыЙ для поисКа самОГО длиНного слова в Тексте . ";
+        System.out.println(text); // выводим неформатированный тест в строку
 
-        String java = "Java Developer";
-        String s2 = new String("Java");
+        text = text.replace(",", ""); // убираем запятые
+        text = text.replace(".", ""); // убираем запятые
+        text = text.trim(); // убираем пробелы спереди и сзади
+        text = text.toLowerCase(); // приводим к нижнему регистру
+        String[] arr1 = text.split(" "); // разбиение на слова по пробелу
 
-//        System.out.println(s==s2); // ссылочный тип данных ссылается на разные объекты
-//        System.out.println(s.equals(s2)); // нужно использлвать equals
-//        System.out.println(s.equalsIgnoreCase(s2));
+        System.out.println(Arrays.toString(arr1)); // вывод массива в строку
+        System.out.println("Массив содержит " + arr1.length + " элементов"); // определяем сколько элементов содержит массив
 
-//        s = s.concat("Developer"); // модификация строки но ее нужно перезаписать
-//        String concat = s.concat("Developer"); // либо положить в ЛП чтобы не менять
-
-//        System.out.println(s);
-//        System.out.println(concat);
-        int length = java.length(); // возвращает длину строки (положили в ЛП)
-        boolean empty = java.isEmpty(); // возвращает явл строка пустой или нет. Не путать с NULL!
-        System.out.println(java.substring(3)); // возвр. подстроку
-        System.out.println(java.substring(2, 7));
-
-        String hello = " Hello world! ";
-        System.out.println(hello);
-        System.out.println(hello.trim());
-
-        System.out.println(hello.indexOf("w")); // возвращает индекс буквы
-
-        System.out.println(hello.replaceAll("l", "!")); // меняет чтото на
-
-        String[] strings = hello.split(" "); // разбивает строку по симфолу, например, по пробелу
-        System.out.println(Arrays.toString(strings));
-
-        for (String string : strings) {
-            System.out.println(string);
-
-            Integer integer = 123123;
-            String number = String.valueOf(integer);
-            System.out.println(number);
+        String longWord = arr1[0];
+        for (int i = 0; i <= arr1.length-1; i++) {
+            if (arr1[i].length() > longWord.length()) {
+                longWord = arr1[i];
+            }
         }
-    }
- //       longWord(String);
-
-    public static void longWord(String[] args) {
-
+        System.out.println("Самое длинное слово - " + longWord);
     }
 }
+
