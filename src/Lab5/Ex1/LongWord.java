@@ -5,22 +5,27 @@ import java.util.Arrays;
 
 public class LongWord {
     public static void main(String[] args) {
-        String text = "  Написать Метод, необходимыЙ для поисКа самОГО длиНного слова в Тексте . ";
-        System.out.println(text); // выводим неформатированный тест в строку
+        String text = "  Нап,исать. Метод, неоБХОдимыЙ,, для пои.сКа самОГО длиНн.ого сл,ова в ТекстE . ";
+        System.out.println(text); // выводим неформатированный текст в строку
 
         text = text.replace(",", ""); // убираем запятые
         text = text.replace(".", ""); // убираем запятые
         text = text.trim(); // убираем пробелы спереди и сзади
         text = text.toLowerCase(); // приводим к нижнему регистру
-        String[] arr1 = text.split(" "); // разбиение на слова по пробелу
+        String[] array = text.split(" "); // разбиение на слова по пробелу
 
-        System.out.println(Arrays.toString(arr1)); // вывод массива в строку
-        System.out.println("Массив содержит " + arr1.length + " элементов"); // определяем сколько элементов содержит массив
+        System.out.println(Arrays.toString(array)); // вывод массива в строку
+        System.out.println("Массив содержит " + array.length + " элементов"); // определяем сколько элементов содержит массив
 
-        String longWord = arr1[0];
-        for (int i = 0; i <= arr1.length-1; i++) {
-            if (arr1[i].length() > longWord.length()) {
-                longWord = arr1[i];
+        longWord(array);
+    }
+
+    public static void longWord(String[] array) // метод принимает на вход массив
+    {
+        String longWord = array[0];
+        for (int i = 0; i <= array.length-1; i++) {
+            if (array[i].length() > longWord.length()) {
+                longWord = array[i];
             }
         }
         System.out.println("Самое длинное слово - " + longWord);
