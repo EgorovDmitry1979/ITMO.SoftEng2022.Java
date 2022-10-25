@@ -1,26 +1,31 @@
 package Lab7;
 
-import java.util.Arrays;
+import java.util.Scanner; // позволяет использовать класс Scanner
 
-public class Airplane
-{
+public class Airplane {
     public static void main(String[] args) {
-        int [][] Array = {{5,7,3,17}, {7,0,1,12}};
-        System.out.println(Arrays.toString(Array));
-    }
+        // массив хранения названий самолетов
+        String[] airplanesName = {"Airbus", "Boing", "B-52", "F-35"};
+        // массив хранения весовых характеристик крыльев
+        int[] wingWeightDB = {10000, 15000, 5000, 1500};
 
-    static String name = "Boing";
-//    static String name = "AirBas";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите название самолета - на выбор: \"Airbus\", \"Boing\", \"B-52\", \"F-35\"");
 
-    public class Wing // вложенный класс
-    {
-        private int weight; // поле для хранения информации про вес крыла
+        String target = scanner.nextLine();
 
-
-
-
-        void wingWeight() // метод показывающий вес крыла
-        {
+        // получаем индекс самолета
+        boolean m = true;
+        for (int i = 0; i < airplanesName.length; i++) {
+            if (m = (target.equals(airplanesName[i]))) {
+                m = true;
+            }
+            if (m) {
+                System.out.println("номер самолета в массиве " + i);
+                System.out.println(" "); // пробел
+                // по индексу самолета получаем вес крыла
+                System.out.println("вес крыла самолета " + airplanesName[i] + " - " + wingWeightDB[i] + " кг");
+            }
 
         }
     }
