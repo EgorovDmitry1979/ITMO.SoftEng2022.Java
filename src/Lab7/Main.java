@@ -20,10 +20,13 @@ public class Main {
             if (m = (target.equals(airplanesName[i]))) {
                 m = true;
             }
-            if (m)
+            if (m) {
                 System.out.println("номер самолета в массиве " + i);
-            // по индексу самолета получаем вес крыла
+                System.out.println(" "); // пробел
+                // по индексу самолета получаем вес крыла
+                System.out.println("вес крыла самолета " + airplanesName[i] + " - " + wingWeightDB[i] + " кг");
+            }
+
         }
-        System.out.println("вес крыла самолета " + wingWeightDB[2]);
     }
 }
