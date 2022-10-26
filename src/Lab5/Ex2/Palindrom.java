@@ -10,10 +10,10 @@ public class Palindrom {
         System.out.println("Неформатированный текст:");
         System.out.println(text); // выводим неформатированный текст в строку
 
-        PLD(text); // вызов метода для проверки на палиндромом
+        pld(text); // вызов метода для проверки на палиндромом
     }
 
-    public static void PLD(String text) {
+    public static void pld(String text) {
         text = text.replace(",", ""); // убираем запятые
         text = text.replace(".", ""); // убираем запятые
         text = text.trim(); // убираем пробелы спереди и сзади
