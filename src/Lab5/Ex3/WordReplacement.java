@@ -33,6 +33,7 @@ public class WordReplacement {
             newText.append(" ");
         }
         System.out.println(newText);
+
     }
 }
 
