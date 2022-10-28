@@ -1,0 +1,13 @@
+
+C
+java:S1121".Extract the assignment out of this expression.(ÊÔš,
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢Šœşûÿÿÿÿ
+J
+java:S1854"5Remove this useless assignment to local variable "m".(ÊÔš,
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ô¾‡è
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ğ„åĞ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ø°«†
+A
+java:S1481"&Remove this unused "m" local variable.(Ä§ú‚úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ûåóˆ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(æ ›

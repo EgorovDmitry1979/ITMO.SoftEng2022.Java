@@ -5,6 +5,7 @@ package Lab5.Ex3;
 public class WordReplacement {
     public static void main(String[] args) {
 
+        System.out.println("Исходный текст:");
         String text = "Напишите метод, заменяющий в тексте все вхождения слова бяка на [вырезано цензурой]";
         System.out.println(text); // выводим неформатированный текст в строку
         System.out.println(" "); // пробел
@@ -20,6 +21,7 @@ public class WordReplacement {
         text = text.replace(".", ""); // убираем запятые
         text = text.trim(); // убираем пробелы спереди и сзади
         text = text.toLowerCase(); // приводим к нижнему регистру
+        System.out.println("Форматированный текст:");
         System.out.println(text); // выводим форматированный текст в строку
         System.out.println(" "); // пробел
 
