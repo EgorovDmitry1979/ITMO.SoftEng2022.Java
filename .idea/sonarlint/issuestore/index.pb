@@ -19,7 +19,5 @@ O
 src/Lab4/Part2/Ex3/ReArray.java,9\8\98bdccecc47ef14d86737fd17a86d95364311d8b
 T
 $src/Lab4/Part2/Ex4/UniqueNumber.java,8\f\8f1e9f2420c59122e4cdf6b8efcd0989a8e0cfd9
-E
-src/Lab1/Ex6/Ex6.java,5\8\58e187504d6e3ca175d1e53565a57944145adbe8
 F
 src/Lab7/Airplane.java,8\4\847fdd8b377ff0f8a40f3fd6e8b1a24394786711
