@@ -2,7 +2,7 @@ package Lab7;
 
 import java.util.Scanner; // позволяет использовать класс Scanner
 
-public class Airplane {
+public class Airplane_v1 {
     public static void main(String[] args) {
         // массив для хранения названий самолетов
         String[] airplanesName = {"Airbus", "Boeing", "B-52", "F-35"};
