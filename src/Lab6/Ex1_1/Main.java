@@ -1,6 +1,6 @@
 package Lab6.Ex1_1;
 
-public class Start {
+public class Main {
     public static void main(String[] args) {
 
         Lab6.Ex1_1.Person.getInfo(); // Вызов из абстрактного класса Человек
