@@ -30,7 +30,7 @@ public class Airplane_v2 {
         public void WeightToScreen(String wing) // метод для вывода веса крыла
                 // является встроенным методом метода toScreen()
         {
-            System.out.println(wing + wingWeight);
+            System.out.println(wing + wingWeight); //
         }
 
     }
