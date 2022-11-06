@@ -19,8 +19,6 @@ M
 src/Lab4/Part1/Ex5/Array.java,e\c\ec508ea1b217fe8005fed52061e401da0a2487c3
 I
 src/Lab9/Ex1/NoDuble.java,9\e\9e690a7dd0b3ac34c9714d1f44342eabd400235c
-G
-src/Lab9/Ex2/Start.java,b\1\b12086703efc66b968ab7d2ebcbf86e4649d6a1e
 F
 src/Lab9/Ex1/Main.java,5\6\566262c33acc54327e0874142d0b73f2ba94e99f
 I
@@ -29,8 +27,6 @@ N
 src/Lab7/Airplane_v2_Main.java,0\0\0086df27a14ef4b99f241db6f1c12c102e406218
 I
 src/Lab7/Airplane_v1.java,7\b\7bcda217995a764e077bf36b4afd58d597c79f5e
-L
-src/Lab9/Ex2/AddMillion.java,2\7\2720069609555fa48c46772f462d98ce95cb0e9a
 F
 src/Lab9/Ex3/User.java,a\9\a9ba01db170d485343e4fcacf294fc8fea56e822
 F

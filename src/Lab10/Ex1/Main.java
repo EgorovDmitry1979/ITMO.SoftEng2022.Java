@@ -3,7 +3,10 @@ package Lab10.Ex1;
 public class Main {
     public static void main(String[] args) {
 
-        String adress = "C://Users//Дмитрий//Desktop//09_Программирование на Java//2. Практика//JAVA//files//FromTextFile.txt";
-        FromTextFile.readToScreen(adress);
+        String adress = "C://ИНЖЕНЕР_ПРОГРАММИСТ//09_Программирование на Java//2. Практика//JAVA//files//FromTextFile.txt";
+
+//       FromTextFile.readToScreen(adress);
+
+        System.out.println(FromTextFile_v2.readToScreen(adress));
     }
 }

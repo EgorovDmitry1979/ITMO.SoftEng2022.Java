@@ -1,6 +1,6 @@
 package Lab10.Ex2;
 
-import Lab10.Ex1.FromTextFile;
+import Lab10.Ex1.FromTextFile_v2;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class Main {
         ToTextFile.toTextFile(adress);
 
         // Запуск метода, разработанного в лабораторной 10.1, для чтение нового содержимого файла
-        FromTextFile.readToScreen(adress);
+        FromTextFile_v2.readToScreen(adress);
     }
 }
 
