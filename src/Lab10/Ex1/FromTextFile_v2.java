@@ -13,24 +13,23 @@ public class FromTextFile_v2 {
     public static String readToScreen(String adress) {
 
         File file = new File(adress);
+        List<String> list = new ArrayList<>();
 
         String input = null;
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             System.out.println(" "); // пробел
-            List<String> list = null;
+
             while ((input = reader.readLine()) != null) {
-
-                list = new ArrayList<>(Collections.singleton(input));
                 list.add(input);
-
- //               System.out.println(input);
-                return list.toString();
+                return input;
             }
 
         } catch (
                 IOException e) {
             System.out.println(e.getMessage());
         }
+
+
         return input;
     }
 }

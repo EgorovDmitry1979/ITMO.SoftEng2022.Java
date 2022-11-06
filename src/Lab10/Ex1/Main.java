@@ -5,8 +5,8 @@ public class Main {
 
         String adress = "C://ИНЖЕНЕР_ПРОГРАММИСТ//09_Программирование на Java//2. Практика//JAVA//files//FromTextFile.txt";
 
-//       FromTextFile.readToScreen(adress);
+       FromTextFile_old.readToScreen(adress);
 
-        System.out.println(FromTextFile_v2.readToScreen(adress));
+        //        System.out.println(FromTextFile_v2.readToScreen(adress));
     }
 }
