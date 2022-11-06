@@ -11,8 +11,7 @@ public class FromTextFile {
 
         File file = new File(adress);
 
-        try (
-                BufferedReader reader = new BufferedReader(new FileReader(file))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String input;
             System.out.println(" "); // пробел
             while ((input = reader.readLine()) != null) {
