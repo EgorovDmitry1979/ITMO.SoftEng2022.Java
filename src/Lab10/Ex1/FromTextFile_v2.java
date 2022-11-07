@@ -10,18 +10,16 @@ import java.util.List;
 
 public class FromTextFile_v2 {
     // Метод, который читает текстовый файл и возвращает его в виде списка строк
-    public static String readToScreen(String adress) {
+    public static List <String> readToScreen(String adress) {
 
         File file = new File(adress);
         List<String> list = new ArrayList<>();
 
         String input = null;
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
-            System.out.println(" "); // пробел
 
             while ((input = reader.readLine()) != null) {
                 list.add(input);
-                return input;
             }
 
         } catch (
@@ -30,6 +28,6 @@ public class FromTextFile_v2 {
         }
 
 
-        return input;
+        return list;
     }
 }
